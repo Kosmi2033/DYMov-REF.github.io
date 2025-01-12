@@ -7,17 +7,7 @@
     <title>DYMov REF</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
-    <script>
-        let tg = window.Telegram.WebApp;
-        let button = document.getElementById("button");
-        tg.expand();
-
-        button.addEventListener("click", () => {
-            document.getElementById("counter").style.display = "none";
-            document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name;
-        });
-    </script>
+    
 </head>
 
 <body>
@@ -39,7 +29,17 @@
             <input type="text" id="user_name">
         </form>
     </main>
+    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let button = document.getElementById("button");
+        tg.expand();
 
+        button.addEventListener("click", () => {
+            document.getElementById("counter").style.display = "none";
+            document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name;
+        });
+    </script>
 </body>
 
 </html>
