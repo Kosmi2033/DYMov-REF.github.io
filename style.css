@@ -9,6 +9,8 @@
 html{
     font-family:"Roboto", sans-serif;
     font-weight: 900;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
 }
 
 main{
