@@ -12,7 +12,13 @@
 
 <body>
     <main>
-        <div class="container" id="container">
+        <div class="container" id="container-admin">
+            <div class="title">
+                <h1>НАЧИСЛИТЬ БОНУСЫ </h1>
+            </div>
+            
+        </div>
+        <!-- <div class="container" id="container-user">
             <div class="title" id="title">
                 <h1>ВАШИ COIN</h1>
             </div>
@@ -23,28 +29,21 @@
             <div class="ad-block">
                 <h2>Приглашай больше друзей,<br>чтобы накопить COIN<br><br>1 COIN = 1 Рубль</h2>
             </div>
-        </div>
-        <button id="button">Press me</button>
-        <form action="">
-            <input type="text" id="user_name">
-        </form>
+        </div> -->
     </main>
     <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
     <script>
         let tg = window.Telegram.WebApp;
-        var adminId = '1602008923';
+        let adminId = 1602008923;
         tg.expand();
 
         if (tg.isActive = true){
             if (tg.initDataUnsafe.user.id==adminId){
-                document.getElementById("counter").style.display = "none";
+                
             }
             else{
-                document.getElementById("title").style.display = "none";
+                
             }
-        }
-        else{
-            document.getElementById("container").style.display = "none";
         }
 
 
