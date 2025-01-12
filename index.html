@@ -12,8 +12,8 @@
 
 <body>
     <main>
-        <div class="container">
-            <div class="title">
+        <div class="container" id="container">
+            <div class="title" id="title">
                 <h1>ВАШИ COIN</h1>
             </div>
             <div class="counter" id="counter">
@@ -39,6 +39,12 @@
             if (tg.initDataUnsafe.user.id==adminId){
                 document.getElementById("counter").style.display = "none";
             }
+            else{
+                document.getElementById("title").style.display = "none";
+            }
+        }
+        else{
+            document.getElementById("container").style.display = "none";
         }
 
 
