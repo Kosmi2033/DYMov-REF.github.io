@@ -30,12 +30,16 @@
                 <h2>Приглашай больше друзей,<br>чтобы накопить COIN<br><br>1 COIN = 1 Рубль</h2>
             </div>
         </div>
+        
     </main>
     <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
     <script>
         let tg = window.Telegram.WebApp;
-        let adminId = 1602008923;
+        let adminId = 1602923008;
+        
         tg.expand();
+
+
 
         if (tg.isActive = true){
             if (tg.initDataUnsafe.user.id==adminId){
